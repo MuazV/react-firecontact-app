@@ -1,17 +1,15 @@
-
 import { initializeApp } from "firebase/app";
-import {getFirestore} from "firebase/firestore"
+import {getFirestore} from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCO92_Gv26ys2gdNiTPOqT9srXGAM-vW7Q",
-  authDomain: "firecontact-c1ea9.firebaseapp.com",
-  projectId: "firecontact-c1ea9",
-  storageBucket: "firecontact-c1ea9.appspot.com",
-  messagingSenderId: "394404250243",
-  appId: "1:394404250243:web:217001392e8a4f66e2d1b6"
+  apiKey: "AIzaSyBspeURJDpC7RHGKBXIj5ocouZwt263L8s",
+  authDomain: "fire-last.firebaseapp.com",
+  projectId: "fire-last",
+  storageBucket: "fire-last.appspot.com",
+  messagingSenderId: "998042878461",
+  appId: "1:998042878461:web:1db7033ba8edc9ac5ed994"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
 export const db = getFirestore(app)

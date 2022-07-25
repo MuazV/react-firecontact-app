@@ -2,7 +2,7 @@ import Table from 'react-bootstrap/Table';
 import {AiFillDelete} from "react-icons/ai";
 import {FiEdit} from "react-icons/fi";
 
-function Tables() {
+function Tables({users}) {
   return (
     <div className='container col-4'>
     <h2 className='w-100 mb-4 display-6 bg-white '>Contacts</h2>
@@ -17,13 +17,18 @@ function Tables() {
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>1</td>
-          <td>Mark</td>
-          <td>Otto</td>
+      {users.map((user) => {
+        return (
+          <tr>
+          <td>{user.name}</td>
+          <td>{user.pnumber}</td>
+          <td>{user.gender}</td>
           <td><AiFillDelete/></td>
           <td><FiEdit/></td>
         </tr>
+        )
+      })}
+        
       </tbody>
     </Table>
     </div>
